@@ -12,15 +12,10 @@ public class BarColorChange : MonoBehaviour
     public float rightEdgePos;
     public float leftEdgePos;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        //Bar color changes depend on his position
         if(bar.transform.position.x > 0)
         {
             float lerpParm = Mathf.InverseLerp(midPos, rightEdgePos, bar.transform.position.x);
